@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/logo.png" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="An experimental digital experience celebrating football in 2026."
+    />
+    <title>United 26 — The World Plays Here</title>
+  </head>
+  <body>
+    <div class="loader" aria-label="Loading the experience">
+      <div class="loader__gates" data-loader-gates aria-hidden="true"></div>
+      <div class="loader__content">
+        <div class="loader__mark">
+          <span>UNITED</span>
+          <strong>26</strong>
+        </div>
+        <div class="loader__bottom">
+          <span>Building the atmosphere</span>
+          <strong class="loader__progress">00</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="cursor" aria-hidden="true">
+      <span>PLAY</span>
+    </div>
+
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand magnetic" href="#top" aria-label="United 26 home">
+        <img src="/fifa-world-cup-26-logo.png" alt="FIFA World Cup 26" />
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#hosts">Hosts</a>
+        <a href="#numbers">Numbers</a>
+      </nav>
+      <a class="round-link magnetic" href="#hosts" aria-label="Explore host cities">
+        <span>EXPLORE</span>
+        <span aria-hidden="true">↘</span>
+      </a>
+    </header>
+
+    <div class="stage" aria-hidden="true">
+      <canvas id="world-canvas"></canvas>
+    </div>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__eyebrow reveal-up">
+          <span>FIFA WORLD CUP 2026</span>
+          <span>CAN · MEX · USA</span>
+        </div>
+
+        <div class="hero__title" aria-label="The world plays here">
+          <div class="title-line"><span>THE WORLD</span></div>
+          <div class="title-line title-line--indent"><span>PLAYS HERE</span></div>
+        </div>
+
+        <div class="hero__meta reveal-up">
+          <div class="meta-card">
+            <span class="meta-card__label">THE FINAL BEGINS IN</span>
+            <div class="countdown" aria-label="Countdown to final">
+              <span><strong data-time="days">00</strong>D</span>
+              <span><strong data-time="hours">00</strong>H</span>
+              <span><strong data-time="minutes">00</strong>M</span>
+              <span><strong data-time="seconds">00</strong>S</span>
+            </div>
+          </div>
+          <p>
+            48 nations. 104 matches.<br />
+            One shared pulse.
+          </p>
+        </div>
+
+        <div class="scroll-cue">
+          <span>SCROLL TO KICK OFF</span>
+          <div class="scroll-cue__line"></div>
+        </div>
+      </section>
+
+      <div class="ticker ticker--blue" aria-hidden="true">
+      <div class="ticker__track">
+          <div class="ticker__set">
+            <span>THE BIGGEST STAGE</span><i>✦</i><span>THE BEAUTIFUL GAME</span><i>✦</i>
+          </div>
+          <div class="ticker__set" aria-hidden="true">
+            <span>THE BIGGEST STAGE</span><i>✦</i><span>THE BEAUTIFUL GAME</span><i>✦</i>
+          </div>
+      </div>
+      </div>
+
+      <section class="manifesto section-pad">
+        <div class="section-kicker">
+          <span id="story">01 / THE PULSE</span>
+          <span>EVERY SECOND COUNTS</span>
+        </div>
+        <div class="manifesto__copy">
+          <p>NOT JUST A GAME.</p>
+          <p>IT'S <em>90 MINUTES</em></p>
+          <p>WHEN THE WORLD</p>
+          <p>HOLDS ITS BREATH.</p>
+        </div>
+        <div class="manifesto__foot">
+          <p>
+            From the first whistle in Mexico City to the final roar in New York /
+            New Jersey, a new chapter will be written in motion.
+          </p>
+          <div class="pulse-orbit" aria-hidden="true">
+            <span></span>
+            <strong>90'</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="hosts section-pad" id="hosts">
+        <div class="hosts__head">
+          <div class="section-kicker">
+            <span>02 / THREE NATIONS</span>
+            <span>ONE TOURNAMENT</span>
+          </div>
+          <h2>
+            <span>16 CITIES.</span>
+            <span>NO QUIET STREETS.</span>
+          </h2>
+        </div>
+        <div class="host-grid" data-hosts></div>
+      </section>
+
+      <section class="matchday" id="matchday">
+        <div class="matchday__copy">
+          <div class="section-kicker section-kicker--light">
+            <span>03 / MATCH MODE</span>
+            <span>VOLUME: MAX</span>
+          </div>
+          <h2>FEEL<br /><em>EVERY</em><br />MOMENT.</h2>
+          <p>
+            A collision of cultures, colors, chants, and impossible moments.
+            Football makes the distance between us disappear.
+          </p>
+        </div>
+        <div class="matchday__visual">
+          <div class="field-card">
+            <img class="field-card__logo" src="/fifa-world-cup-26-logo.png" alt="" />
+            <div class="field-card__status">
+              <span></span>
+              <strong data-match-status>NEXT MATCH</strong>
+              <b data-match-time>04:00 MSK</b>
+            </div>
+            <div class="field-card__fixture">
+              <div class="fixture-team">
+                <img class="fixture-flag" data-home-logo src="https://a.espncdn.com/i/teamlogos/countries/500/ger.png" alt="Germany" />
+                <strong data-home-code>GER</strong>
+              </div>
+              <i data-match-versus>V</i>
+              <div class="fixture-team">
+                <img class="fixture-flag" data-away-logo src="https://a.espncdn.com/i/teamlogos/soccer/500/11678.png" alt="Curaçao" />
+                <strong data-away-code>CUW</strong>
+              </div>
+              <div class="fixture-meta">
+                <time data-match-date datetime="2026-06-14T17:00:00Z">14 JUN 2026</time>
+                <p data-match-venue>GROUP E · NRG STADIUM</p>
+              </div>
+            </div>
+            <div class="field-card__lines">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="field-card__players" data-players></div>
+            <div class="field-card__ball"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="numbers section-pad" id="numbers">
+        <div class="section-kicker">
+          <span>04 / BY THE NUMBERS</span>
+          <span>A NEW SCALE</span>
+        </div>
+        <div class="numbers__grid">
+          <article class="stat-card stat-card--lime">
+            <span>THE TEAMS</span>
+            <strong data-count="48">48</strong>
+            <p>More dreams on the pitch than ever before.</p>
+          </article>
+          <article class="stat-card stat-card--orange">
+            <span>THE MATCHES</span>
+            <strong data-count="104">104</strong>
+            <p>Every one capable of changing history.</p>
+          </article>
+          <article class="stat-card stat-card--blue">
+            <span>THE HOST CITIES</span>
+            <strong data-count="16">16</strong>
+            <p>One continent transformed into a stadium.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="finale">
+        <div class="finale__rings" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p>THE WORLD IS READY</p>
+        <h2><span>SEE YOU</span><span>ON THE PITCH.</span></h2>
+        <a class="finale__button magnetic" href="#top">
+          <span>REPLAY EXPERIENCE</span>
+          <strong>↗</strong>
+        </a>
+        <footer>
+          <span>UNITED 26 — CONCEPT EXPERIENCE</span>
+          <span>NOT AN OFFICIAL FIFA WEBSITE</span>
+          <span>2026</span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
