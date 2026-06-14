@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="46" fill="#fff"/>
+  <g fill="#0b0b0b">
+    <!-- patches around the central hexagon -->
+    <polygon points="42,36.1 58,36.1 60,26 50,19 40,26"/>
+    <polygon points="58,36.1 63,26 75,30 80,44 66,50"/>
+    <polygon points="42,36.1 37,26 25,30 20,44 34,50"/>
+    <polygon points="34,50 20,55 23,69 37,74 42,63.9"/>
+    <polygon points="66,50 80,55 77,69 63,74 58,63.9"/>
+  </g>
+  <g fill="none" stroke="#0b0b0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- central hexagon -->
+    <polygon points="66,50 58,63.9 42,63.9 34,50 42,36.1 58,36.1"/>
+    <!-- seams to the rim -->
+    <line x1="50" y1="19" x2="50" y2="5"/>
+    <line x1="75" y1="30" x2="86" y2="21"/>
+    <line x1="25" y1="30" x2="14" y2="21"/>
+    <line x1="23" y1="69" x2="12" y2="78"/>
+    <line x1="77" y1="69" x2="88" y2="78"/>
+    <!-- bottom white patch seams -->
+    <line x1="42" y1="63.9" x2="33" y2="88"/>
+    <line x1="58" y1="63.9" x2="67" y2="88"/>
+  </g>
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#0b0b0b" stroke-width="6"/>
+</svg>
